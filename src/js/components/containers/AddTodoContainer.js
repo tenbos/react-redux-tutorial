@@ -7,9 +7,9 @@ const mapDispatchToProps = (dispatch) => {
     return bindActionCreators({ addTodo }, dispatch);
 };
 
-const VisibleAddTodo = connect(
+const AddTodoContainer = connect(
     null,
     mapDispatchToProps
 )(AddTodo);
 
-export default VisibleAddTodo
+export default AddTodoContainer
