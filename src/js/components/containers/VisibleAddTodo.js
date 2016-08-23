@@ -1,10 +1,10 @@
 import { bindActionCreators } from "redux"
 import { connect } from "react-redux"
-import * as TodoActionCreators from "../../actions"
+import { addTodo } from "../../actions"
 import AddTodo from "../AddTodo"
 
 const mapDispatchToProps = (dispatch) => {
-    return bindActionCreators(TodoActionCreators, dispatch);
+    return bindActionCreators({ addTodo }, dispatch);
 };
 
 const VisibleAddTodo = connect(
